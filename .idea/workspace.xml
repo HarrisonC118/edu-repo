@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="调通广告服务模块">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="上传没必要文件">
+      <change afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/src/main/java/com/hatcher/dto/PromotionSpaceDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/src/main/java/com/hatcher/remote/AdRemoteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/remote/AdRemoteServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-admin-boot/src/main/java/com/hatcher/ad/controller/AdController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-admin-boot/src/main/java/hatcher/AdminApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-admin-boot/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/controller/PromotionSpaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/controller/PromotionSpaceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-ad-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-admin-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-admin-boot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-admin-boot/src/main/java/com/hatcher/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,10 +88,23 @@
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
-  <component name="RunManager" selected="Spring Boot.EduAdApplication">
+  <component name="RunManager" selected="Spring Boot.AdminApplication">
     <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hatcher.Generator" />
       <module name="edu-ad-boot-impl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hatcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="edu-admin-boot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hatcher.AdminApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.hatcher.*" />
@@ -135,6 +156,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.AdminApplication" />
         <item itemvalue="Spring Boot.EduAdApplication" />
         <item itemvalue="Spring Boot.ConfigApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
@@ -155,7 +177,7 @@
       <workItem from="1672362639765" duration="1104000" />
       <workItem from="1672390320072" duration="1690000" />
       <workItem from="1672393188997" duration="8970000" />
-      <workItem from="1672449931977" duration="2427000" />
+      <workItem from="1672449931977" duration="3539000" />
     </task>
     <task id="LOCAL-00001" summary="添加java属性拷贝工具类">
       <created>1672392800054</created>
@@ -213,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672452351260</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="上传没必要文件">
+      <created>1672452388785</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672452388785</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +257,8 @@
     <MESSAGE value="完成配置中心" />
     <MESSAGE value="添加忽略文件" />
     <MESSAGE value="调通广告服务模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="调通广告服务模块" />
+    <MESSAGE value="上传没必要文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传没必要文件" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
