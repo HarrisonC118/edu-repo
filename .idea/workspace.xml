@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="完成远程调用">
-      <change afterPath="$PROJECT_DIR$/edu-gateway-boot/src/main/java/com/hatcher/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-gateway-boot/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="完成网关配置">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-gateway-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-gateway-boot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-gateway-boot/src/main/java/com/hatcher/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-config-boot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-config-boot/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +70,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.importing",
-    "spring.configuration.checksum": "caf91b512ce6aa8808703b78858a8644",
+    "spring.configuration.checksum": "8e2f550a6bfc3f6683155207dd117023",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -169,7 +166,8 @@
       <workItem from="1672362639765" duration="1104000" />
       <workItem from="1672390320072" duration="1690000" />
       <workItem from="1672393188997" duration="8970000" />
-      <workItem from="1672449931977" duration="4188000" />
+      <workItem from="1672449931977" duration="4517000" />
+      <workItem from="1672583301987" duration="19000" />
     </task>
     <task id="LOCAL-00001" summary="添加java属性拷贝工具类">
       <created>1672392800054</created>
@@ -241,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672453756186</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="完成网关配置">
+      <created>1672454234035</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672454234035</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,7 +263,8 @@
     <MESSAGE value="调通广告服务模块" />
     <MESSAGE value="上传没必要文件" />
     <MESSAGE value="完成远程调用" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成远程调用" />
+    <MESSAGE value="完成网关配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成网关配置" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
