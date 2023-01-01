@@ -9,7 +9,7 @@ spring:
       server:
         git:
           uri: git@github.com:HatcherCheung/edu-repo.git
-          default-label: main
+          default-label: config
           strictHostKeyChecking: false
           privateKey: |
             -----BEGIN EC PRIVATE KEY-----
