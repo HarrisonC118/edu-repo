@@ -9,17 +9,18 @@
 
     <packaging>pom</packaging>
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.cloud-version>2021.0.4</spring.cloud-version>
-        <spring-cloud-alibaba.version>2021.0.4.0</spring-cloud-alibaba.version>
-        <spring-boot.version>2.6.11</spring-boot.version>
-        <!--        <spring.cloud-version>2022.0.0</spring.cloud-version>-->
-        <!--        <spring-cloud-alibaba.version>2022.0.0.0-RC1</spring-cloud-alibaba.version>-->
-        <!--        <spring-boot.version>3.0.0</spring-boot.version>-->
-        <!--        <dubbo.version>3.2.0-beta.3</dubbo.version>-->
-        <dubbo.version>3.1.4</dubbo.version>
+        <!--        <spring.cloud-version>2021.0.4</spring.cloud-version>-->
+        <!--        <spring-cloud-alibaba.version>2021.0.4.0</spring-cloud-alibaba.version>-->
+        <!--        <spring-boot.version>2.6.11</spring-boot.version>-->
+        <!--        <dubbo.version>3.1.4</dubbo.version>-->
+        <spring.cloud-version>2022.0.0</spring.cloud-version>
+        <spring-cloud-alibaba.version>2022.0.0.0-RC1</spring-cloud-alibaba.version>
+        <spring-boot.version>3.0.0</spring-boot.version>
+        <dubbo.version>3.2.0-beta.3</dubbo.version>
+
     </properties>
     <dependencyManagement>
         <dependencies>

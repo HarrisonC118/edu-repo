@@ -4,28 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="config分支修改">
-      <change afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-config-boot/src/main/java/com/hatcher/config/TestConfig.java" afterDir="false" />
+    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="把eurka换成nacos，并且使用nacos的配置中心">
+      <change afterPath="$PROJECT_DIR$/edu-common/src/main/java/com/hatcher/interfaces/BeanUtilCopyCallBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/src/main/java/com/hatcher/dto/PromotionSpaceDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/src/main/java/com/hatcher/dto/PromotionSpaceDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/src/main/java/com/hatcher/remote/AdRemoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/src/main/java/com/hatcher/remote/AdRemoteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/EduAdApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/EduAdApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/mapper/PromotionAdMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/mapper/PromotionAdMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/mapper/PromotionSpaceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/mapper/PromotionSpaceMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/remote/AdRemoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/remote/AdRemoteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/resources/bootstrap.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/edu-ad-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu-admin-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-admin-boot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-admin-boot/src/main/java/com/hatcher/AdminApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-admin-boot/src/main/java/com/hatcher/AdminApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-admin-boot/src/main/java/com/hatcher/ad/controller/AdController.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-admin-boot/src/main/java/com/hatcher/ad/controller/AdController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-admin-boot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-admin-boot/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu-bom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-bom/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-config-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-config-boot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-config-boot/src/main/java/com/hatcher/ConfigApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-config-boot/src/main/java/com/hatcher/ConfigApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-config-boot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-config-boot/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-gateway-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-gateway-boot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-gateway-boot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-gateway-boot/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-common/src/main/java/com/hatcher/util/ConvertUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-common/src/main/java/com/hatcher/util/ConvertUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-front-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-front-boot/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +41,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -92,33 +87,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/No03.Code/pro-edu/pro-edu-backend/edu-bom&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;spring&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;8e2f550a6bfc3f6683155207dd117023&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-1.8",
+    "last_opened_file_path": "D:/No03.Code/pro-edu/pro-edu-backend/edu-bom",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "项目",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "spring",
+    "spring.configuration.checksum": "d363b6f50214723773750e09f209bcb0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
-  <component name="RunManager" selected="Spring Boot.EduAdApplication">
+  <component name="RunManager" selected="Spring Boot.AdminApplication">
     <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="edu-admin-boot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hatcher.AdminApplication" />
@@ -186,8 +181,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.EduAdApplication" />
         <item itemvalue="Spring Boot.AdminApplication" />
+        <item itemvalue="Spring Boot.EduAdApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.ConfigApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
@@ -218,6 +213,7 @@
       <workItem from="1672835610021" duration="734000" />
       <workItem from="1672839252494" duration="25000" />
       <workItem from="1672883521461" duration="7482000" />
+      <workItem from="1672894095347" duration="4442000" />
     </task>
     <task id="LOCAL-00001" summary="添加java属性拷贝工具类">
       <created>1672392800054</created>

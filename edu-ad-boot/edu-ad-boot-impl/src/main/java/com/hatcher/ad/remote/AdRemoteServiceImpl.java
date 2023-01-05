@@ -23,7 +23,7 @@ public class AdRemoteServiceImpl implements AdRemoteService {
     @Override
     public List<PromotionSpaceDTO> getAllSpaces() {
         List<PromotionSpace> list = promotionSpaceService.list();
-        return ConvertUtil.convertList(list, PromotionSpaceDTO.class);
+        return ConvertUtil.copyListProperties(list, PromotionSpaceDTO::new);
     }
 }
 
