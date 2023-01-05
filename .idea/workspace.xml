@@ -4,22 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="把eurka换成nacos，并且使用nacos的配置中心">
-      <change afterPath="$PROJECT_DIR$/edu-common/src/main/java/com/hatcher/interfaces/BeanUtilCopyCallBack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="全部使用最新版本">
+      <change afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/test/java/com/hatcher/AutoGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/test/java/com/hatcher/GetProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/test/resources/application-v1-pack.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/mapper/PromotionAdMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/mapper/PromotionAdMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/mapper/PromotionSpaceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/mapper/PromotionSpaceMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/remote/AdRemoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/remote/AdRemoteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-admin-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-admin-boot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-bom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-bom/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-common/src/main/java/com/hatcher/util/ConvertUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-common/src/main/java/com/hatcher/util/ConvertUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-front-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-front-boot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/test/java/com/hatcher/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/test/java/com/hatcher/Generator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -113,7 +104,20 @@
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
-  <component name="RunManager" selected="Spring Boot.AdminApplication">
+  <component name="RunManager" selected="应用程序.Generator">
+    <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hatcher.Generator" />
+      <module name="edu-ad-boot-impl" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hatcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="edu-admin-boot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hatcher.AdminApplication" />
@@ -153,19 +157,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="edu-eureka-boot" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hatcher.EurekaApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hatcher.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="edu-gateway-boot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hatcher.GatewayApplication" />
@@ -181,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Generator" />
         <item itemvalue="Spring Boot.AdminApplication" />
         <item itemvalue="Spring Boot.EduAdApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.ConfigApplication" />
-        <item itemvalue="Spring Boot.EurekaApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +204,7 @@
       <workItem from="1672835610021" duration="734000" />
       <workItem from="1672839252494" duration="25000" />
       <workItem from="1672883521461" duration="7482000" />
-      <workItem from="1672894095347" duration="4442000" />
+      <workItem from="1672894095347" duration="7257000" />
     </task>
     <task id="LOCAL-00001" summary="添加java属性拷贝工具类">
       <created>1672392800054</created>
@@ -313,7 +304,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672883735113</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="全部使用最新版本">
+      <created>1672898953212</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1672898953212</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,7 +332,8 @@
     <MESSAGE value="更新配置文件的分支" />
     <MESSAGE value="更新主分支内容" />
     <MESSAGE value="config分支修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="config分支修改" />
+    <MESSAGE value="全部使用最新版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="全部使用最新版本" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
