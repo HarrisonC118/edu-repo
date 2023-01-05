@@ -7,7 +7,7 @@ spring:
   cloud:
     config:
       uri: http://localhost:8090
-      label: main
+      label: config
       profile: dev
       name: edu-ad
 
