@@ -1,0 +1,33 @@
+server:
+  port: 8001
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: edu-ad
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.115.214.213:8848
+      config:
+        server-addr: 47.115.214.213:8848
+        file-extension: yaml
+        refresh-enabled: true # 是否动态刷新,默认为false
+        import-check:
+          enabled: false # 是否开启配置文件导入检查,默认为true
+  config:
+    import: nacos:edu-ad-dev.yaml
+dubbo:
+  application:
+    name: edu-ad
+  protocol:
+    name: dubbo
+    port: -1
+  scan:
+    base-packages: com.hatcher.ad.remote
+  registry:
+    address: nacos://47.115.214.213:8848
+#  config-center:
+#    address: nacos://47.115.214.213:8848
+#    config-file: edu-ad-dev.yaml

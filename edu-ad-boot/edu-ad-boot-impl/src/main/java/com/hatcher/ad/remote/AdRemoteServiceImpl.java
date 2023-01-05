@@ -5,10 +5,8 @@ import com.hatcher.ad.service.IPromotionSpaceService;
 import com.hatcher.dto.PromotionSpaceDTO;
 import com.hatcher.remote.AdRemoteService;
 import com.hatcher.util.ConvertUtil;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
@@ -17,14 +15,12 @@ import java.util.List;
  * @date 2022/12/31 10:16
  * @description
  */
-@RestController
-@RequestMapping("/ad")
+@DubboService
 public class AdRemoteServiceImpl implements AdRemoteService {
     @Autowired
     private IPromotionSpaceService promotionSpaceService;
 
     @Override
-    @GetMapping("/space/getAllSpaces")
     public List<PromotionSpaceDTO> getAllSpaces() {
         List<PromotionSpace> list = promotionSpaceService.list();
         return ConvertUtil.convertList(list, PromotionSpaceDTO.class);

@@ -1,16 +1,19 @@
 server:
   port: 8082
-
 spring:
   application:
     name: edu-admin-boot
-
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:8761/eureka/
-
-  instance:
-    prefer-ip-address: true
-    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.115.214.213:8848
+dubbo:
+  application:
+    name: edu-admin-boot
+  protocol:
+    name: dubbo
+    port: -1
+  scan:
+    base-packages: com.hatcher
+  registry:
+    address: nacos://47.115.214.213:8848

@@ -8,10 +8,10 @@
         <option value="$PROJECT_DIR$/edu-ad-boot/pom.xml" />
         <option value="$PROJECT_DIR$/edu-gateway-boot/pom.xml" />
         <option value="$PROJECT_DIR$/edu-front-boot/pom.xml" />
-        <option value="$PROJECT_DIR$/edu-eureka-boot/pom.xml" />
         <option value="$PROJECT_DIR$/edu-config-boot/pom.xml" />
         <option value="$PROJECT_DIR$/edu-common/pom.xml" />
         <option value="$PROJECT_DIR$/edu-admin-boot/pom.xml" />
+        <option value="$PROJECT_DIR$/edu-bom/pom.xml" />
       </list>
     </option>
   </component>

@@ -5,6 +5,9 @@ spring:
   application:
     name: edu-gateway-boot
   cloud:
+    nacos:
+      discovery:
+        server-addr: 47.115.214.213:8848
     gateway:
       routes:
         - id: edu-front
@@ -19,12 +22,3 @@ spring:
             - Path=/admin/**
           filters:
             - StripPrefix=1
-
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:8761/eureka/
-  instance:
-    prefer-ip-address: true
-    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}

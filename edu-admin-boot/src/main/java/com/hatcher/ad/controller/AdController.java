@@ -2,7 +2,7 @@ package com.hatcher.ad.controller;
 
 import com.hatcher.remote.AdRemoteService;
 import com.hatcher.response.ResponseDTO;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/ad")
 public class AdController {
-    @Autowired
+    @DubboReference
     private AdRemoteService adRemoteService;
 
     @RequestMapping("space/getAllSpaces")

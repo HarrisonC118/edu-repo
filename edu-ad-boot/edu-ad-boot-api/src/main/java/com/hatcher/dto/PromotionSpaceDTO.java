@@ -1,5 +1,6 @@
 package com.hatcher.dto;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
@@ -7,7 +8,7 @@ import java.time.LocalDateTime;
  * @date 2022/12/31 10:07
  * @description PromotionSpace远程调用的DTO
  */
-public class PromotionSpaceDTO {
+public class PromotionSpaceDTO implements Serializable {
     private static final long serialVersionUID = 1L;
     private Integer id;
 

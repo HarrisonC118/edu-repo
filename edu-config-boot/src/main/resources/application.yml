@@ -3,17 +3,21 @@ server:
 
 spring:
   application:
-    name: edu-config-boot
+    name: example
   cloud:
-    config:
-      server:
-        git:
-          uri: git@github.com:HatcherCheung/edu-repo.git
-          default-label: config
-          strictHostKeyChecking: false
-          privateKey: |
-            -----BEGIN EC PRIVATE KEY-----
-            MHcCAQEEIIoJbOJjcN1jUPSe3gnjM4j+CiqddHgO9c9brqhff+9aoAoGCCqGSM49
-            AwEHoUQDQgAEMMq8+HI1lOoLky82Zjl5Hiqi/HT7E5Fh2ZQqg/jZbf5W9SBskYqU
-            mlJ9i9CLs1mwiXObpJnzK3IyyaltZuzB3A==
-            -----END EC PRIVATE KEY-----
+    nacos:
+      config:
+        server-addr: 47.115.214.213:8848
+        import-check:
+          enabled: false
+#      server:
+#        git:
+#          uri: git@github.com:HatcherCheung/edu-repo.git
+#          default-label: config
+#          strictHostKeyChecking: false
+#          privateKey: |
+#            -----BEGIN EC PRIVATE KEY-----
+#            MHcCAQEEIIoJbOJjcN1jUPSe3gnjM4j+CiqddHgO9c9brqhff+9aoAoGCCqGSM49
+#            AwEHoUQDQgAEMMq8+HI1lOoLky82Zjl5Hiqi/HT7E5Fh2ZQqg/jZbf5W9SBskYqU
+#            mlJ9i9CLs1mwiXObpJnzK3IyyaltZuzB3A==
+#            -----END EC PRIVATE KEY-----
