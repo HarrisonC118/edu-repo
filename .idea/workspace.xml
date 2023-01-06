@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="适配最新的MybatisPlus代码生成器">
+    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="完成获取广告位的信息&#10;AdController:&quot;space/getAllSpaces&quot;,&quot;space/getAdsBySpaceKey&quot;">
       <change afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/src/main/java/com/hatcher/dto/PromotionAdDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -199,7 +199,7 @@
       <workItem from="1672894095347" duration="7579000" />
       <workItem from="1672909195182" duration="4737000" />
       <workItem from="1672928265122" duration="3330000" />
-      <workItem from="1672995018519" duration="4022000" />
+      <workItem from="1672995018519" duration="4591000" />
     </task>
     <task id="LOCAL-00001" summary="添加java属性拷贝工具类">
       <created>1672392800054</created>
@@ -313,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672901567991</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="完成获取广告位的信息&#10;AdController:&quot;space/getAllSpaces&quot;,&quot;space/getAdsBySpaceKey&quot;">
+      <created>1672999758696</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1672999758696</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,7 +343,8 @@
     <MESSAGE value="config分支修改" />
     <MESSAGE value="全部使用最新版本" />
     <MESSAGE value="适配最新的MybatisPlus代码生成器" />
-    <option name="LAST_COMMIT_MESSAGE" value="适配最新的MybatisPlus代码生成器" />
+    <MESSAGE value="完成获取广告位的信息&#10;AdController:&quot;space/getAllSpaces&quot;,&quot;space/getAdsBySpaceKey&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成获取广告位的信息&#10;AdController:&quot;space/getAllSpaces&quot;,&quot;space/getAdsBySpaceKey&quot;" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
