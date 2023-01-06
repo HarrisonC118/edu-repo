@@ -31,3 +31,6 @@ dubbo:
 #  config-center:
 #    address: nacos://47.115.214.213:8848
 #    config-file: edu-ad-dev.yaml
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

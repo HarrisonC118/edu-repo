@@ -1,13 +1,23 @@
 package com.hatcher.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * @author hatcher
  * @date 2022/12/31 10:07
  * @description PromotionSpace远程调用的DTO
  */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
 public class PromotionSpaceDTO implements Serializable {
     private static final long serialVersionUID = 1L;
     private Integer id;
@@ -28,63 +38,6 @@ public class PromotionSpaceDTO implements Serializable {
 
     private Integer isDel;
 
-    public Integer getId() {
-        return id;
-    }
+    private List<PromotionAdDTO> promotionAdDTOS;
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSpaceKey() {
-        return spaceKey;
-    }
-
-    public void setSpaceKey(String spaceKey) {
-        this.spaceKey = spaceKey;
-    }
-
-    public LocalDateTime getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(LocalDateTime createTime) {
-        this.createTime = createTime;
-    }
-
-    public LocalDateTime getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(LocalDateTime updateTime) {
-        this.updateTime = updateTime;
-    }
-
-    public Integer getIsDel() {
-        return isDel;
-    }
-
-    public void setIsDel(Integer isDel) {
-        this.isDel = isDel;
-    }
-
-    @Override
-    public String toString() {
-        return "PromotionSpaceDTO{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", spaceKey='" + spaceKey + '\'' +
-                ", createTime=" + createTime +
-                ", updateTime=" + updateTime +
-                ", isDel=" + isDel +
-                '}';
-    }
 }

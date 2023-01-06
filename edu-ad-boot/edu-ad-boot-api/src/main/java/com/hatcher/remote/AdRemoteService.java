@@ -17,4 +17,12 @@ public interface AdRemoteService {
      * @return List<PromotionSpaceDTO>
      */
     List<PromotionSpaceDTO> getAllSpaces();
+
+    /**
+     * 根据广告位id获取广告信息
+     *
+     * @param spaceKeys 广告位id
+     * @return List<PromotionSpaceDTO>
+     */
+    List<PromotionSpaceDTO> getAdsBySpaceId(String[] spaceKeys);
 }

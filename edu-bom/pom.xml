@@ -20,7 +20,6 @@
         <spring-cloud-alibaba.version>2022.0.0.0-RC1</spring-cloud-alibaba.version>
         <spring-boot.version>3.0.0</spring-boot.version>
         <dubbo.version>3.2.0-beta.3</dubbo.version>
-
     </properties>
     <dependencyManagement>
         <dependencies>

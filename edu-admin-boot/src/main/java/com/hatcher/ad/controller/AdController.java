@@ -3,6 +3,7 @@ package com.hatcher.ad.controller;
 import com.hatcher.remote.AdRemoteService;
 import com.hatcher.response.ResponseDTO;
 import org.apache.dubbo.config.annotation.DubboReference;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,8 +18,14 @@ public class AdController {
     @DubboReference
     private AdRemoteService adRemoteService;
 
-    @RequestMapping("space/getAllSpaces")
+    @GetMapping("space/getAllSpaces")
     public ResponseDTO getAllSpaces() {
         return ResponseDTO.success(adRemoteService.getAllSpaces());
     }
+
+    @GetMapping("space/getAdsBySpaceKey")
+    public ResponseDTO getAdsBySpaceKey(String[] spaceKeys) {
+        return ResponseDTO.success(adRemoteService.getAdsBySpaceId(spaceKeys));
+    }
+
 }
