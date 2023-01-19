@@ -4,26 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="完成自动生成器的修改">
-      <change afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/handler/MyMetaObjectHandler.java" afterDir="false" />
+    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="修改数据库字段名称，并添加mybatisPlus的数据字段填充">
+      <change afterPath="$PROJECT_DIR$/edu-front-boot/src/main/java/com/hatcher/ad/controller/AdController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-front-boot/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/src/main/java/com/hatcher/dto/PromotionAdDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/src/main/java/com/hatcher/dto/PromotionAdDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/src/main/java/com/hatcher/dto/PromotionSpaceDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/src/main/java/com/hatcher/dto/PromotionSpaceDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/controller/PromotionAdController.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/controller/PromotionAdController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/entity/PromotionAd.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/entity/PromotionAd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/entity/PromotionSpace.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/entity/PromotionSpace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/mapper/PromotionAdMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/mapper/PromotionAdMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/mapper/PromotionSpaceMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/mapper/PromotionSpaceMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/remote/AdRemoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/remote/AdRemoteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/service/IPromotionAdService.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/service/PromotionAdService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/service/IPromotionSpaceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/service/PromotionSpaceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/service/impl/PromotionAdServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/service/impl/PromotionAdServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/service/impl/PromotionSpaceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/service/impl/PromotionSpaceServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/test/java/com/hatcher/AutoGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/test/java/com/hatcher/AutoGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/test/resources/application-v1-pack.yml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/test/resources/application-v1-pack.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-front-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-front-boot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-front-boot/src/main/java/com/hatcher/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-front-boot/src/main/java/com/hatcher/FrontApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +86,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-1.8",
-    "last_opened_file_path": "D:/No03.Code/pro-edu/pro-edu-backend/edu-bom",
+    "last_opened_file_path": "D:/No03.Code/pro-edu/pro-edu-backend/edu-front-boot/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -118,6 +103,9 @@
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\No03.Code\pro-edu\pro-edu-backend\edu-front-boot\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\No03.Code\pro-edu\pro-edu-backend\edu-ad-boot\edu-ad-boot-impl\src\main\java\com\hatcher\ad\entity" />
       <recent name="D:\No03.Code\pro-edu\pro-edu-backend\edu-ad-boot\edu-ad-boot-impl\src\main\java\com\hatcher\ad\mapper" />
@@ -166,6 +154,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FrontApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="edu-front-boot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hatcher.FrontApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hatcher.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="edu-gateway-boot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hatcher.GatewayApplication" />
@@ -182,8 +183,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.GatewayApplication" />
-        <item itemvalue="Spring Boot.AdminApplication" />
+        <item itemvalue="Spring Boot.FrontApplication" />
         <item itemvalue="Spring Boot.EduAdApplication" />
+        <item itemvalue="Spring Boot.AdminApplication" />
         <item itemvalue="应用程序.Generator" />
       </list>
     </recent_temporary>
@@ -217,7 +219,8 @@
       <workItem from="1672928265122" duration="3330000" />
       <workItem from="1672995018519" duration="6349000" />
       <workItem from="1674096604649" duration="594000" />
-      <workItem from="1674105373210" duration="7676000" />
+      <workItem from="1674105373210" duration="8385000" />
+      <workItem from="1674126684145" duration="4529000" />
     </task>
     <task id="LOCAL-00001" summary="添加java属性拷贝工具类">
       <created>1672392800054</created>
@@ -352,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674107034728</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="修改数据库字段名称，并添加mybatisPlus的数据字段填充">
+      <created>1674113564545</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1674113564545</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +387,8 @@
     <MESSAGE value="适配最新的MybatisPlus代码生成器" />
     <MESSAGE value="完成获取广告位的信息&#10;AdController:&quot;space/getAllSpaces&quot;,&quot;space/getAdsBySpaceKey&quot;" />
     <MESSAGE value="完成自动生成器的修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成自动生成器的修改" />
+    <MESSAGE value="修改数据库字段名称，并添加mybatisPlus的数据字段填充" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改数据库字段名称，并添加mybatisPlus的数据字段填充" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

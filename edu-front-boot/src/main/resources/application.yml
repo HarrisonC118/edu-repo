@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: edu-front-boot
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.115.214.213:8848
+dubbo:
+  application:
+    name: edu-front-boot
+  protocol:
+    name: dubbo
+    port: -1
+  scan:
+    base-packages: com.hatcher
+  registry:
+    address: nacos://47.115.214.213:8848
