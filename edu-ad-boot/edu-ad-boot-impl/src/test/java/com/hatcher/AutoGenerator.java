@@ -50,7 +50,7 @@ public class AutoGenerator implements Serializable {
         FastAutoGenerator.create(mysql, mysqlUser, mysqlPassword)
                 .globalConfig(builder -> {
                     builder.author(config.getString("author")) // 设置作者
-                            .enableSwagger() // 开启 swagger 模式
+//                            .enableSwagger() // 开启 swagger 模式
                             .fileOverride() // 覆盖已生成文件
                             .disableOpenDir()//关闭资源管理器
                             .outputDir(config.getString("path")) // 指定输出目录
