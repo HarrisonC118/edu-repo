@@ -2,7 +2,6 @@ package com.hatcher.ad.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.hatcher.ad.entity.PromotionSpace;
-import org.apache.ibatis.annotations.Mapper;
 
 /**
  * <p>
@@ -10,9 +9,8 @@ import org.apache.ibatis.annotations.Mapper;
  * </p>
  *
  * @author hatcher
- * @since 2022-12-31
+ * @since 2023-01-19
  */
-@Mapper
 public interface PromotionSpaceMapper extends BaseMapper<PromotionSpace> {
 
 }

@@ -3,7 +3,7 @@ package com.hatcher.ad.service.impl;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hatcher.ad.entity.PromotionSpace;
 import com.hatcher.ad.mapper.PromotionSpaceMapper;
-import com.hatcher.ad.service.IPromotionSpaceService;
+import com.hatcher.ad.service.PromotionSpaceService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -12,9 +12,9 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author hatcher
- * @since 2022-12-31
+ * @since 2023å¹´01æ19æ¥
  */
 @Service
-public class PromotionSpaceServiceImpl extends ServiceImpl<PromotionSpaceMapper, PromotionSpace> implements IPromotionSpaceService {
+public class PromotionSpaceServiceImpl extends ServiceImpl<PromotionSpaceMapper, PromotionSpace> implements PromotionSpaceService {
 
 }

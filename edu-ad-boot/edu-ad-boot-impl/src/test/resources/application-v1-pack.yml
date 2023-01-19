@@ -5,7 +5,7 @@ pathMapperXml: E://JAVA//TemplateAdmin//management//src//main//resources//mapper
 # 作者名
 author: hatcher
 # 注释时间
-commentDate: yyyy年MM月dd日
+commentDate: yyyy-MM-dd
 # 数据库地址
 databaseIp: 43.143.175.15
 # 数据库端口后
@@ -17,7 +17,7 @@ mysqlUser: root
 # 数据库密码
 mysqlPassword: root
 # 设置父包名
-parent: com.hatcher
+parent: com.hatcher.ad
 # 设置实体层
 entity: entity
 # 设置服务层
@@ -33,7 +33,7 @@ controller: controller
 # 其他层设置
 other: common
 # 设置需要生成的表名
-tableName: promotion_ad
+tableName: promotion_space
 # 设置是否生成全部表名
 allTableName: false
 # 设置过滤表前缀

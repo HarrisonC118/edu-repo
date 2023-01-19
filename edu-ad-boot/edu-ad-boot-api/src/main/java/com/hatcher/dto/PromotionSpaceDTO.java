@@ -20,24 +20,20 @@ import java.util.List;
 @ToString
 public class PromotionSpaceDTO implements Serializable {
     private static final long serialVersionUID = 1L;
-    private Integer id;
 
-    /**
-     * 名称
-     */
+    private String id;
+
+    private Integer revision;
+
+    private LocalDateTime gmtCreate;
+
+    private LocalDateTime gmtModified;
+
+    private Boolean isDeleted;
+
     private String name;
 
-    /**
-     * 广告位key
-     */
     private String spaceKey;
-
-    private LocalDateTime createTime;
-
-    private LocalDateTime updateTime;
-
-    private Integer isDel;
-
     private List<PromotionAdDTO> promotionAdDTOS;
 
 }

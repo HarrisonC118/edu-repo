@@ -1,10 +1,10 @@
 package com.hatcher.ad.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import com.baomidou.mybatisplus.annotation.*;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -15,36 +15,39 @@ import java.time.LocalDateTime;
  * </p>
  *
  * @author hatcher
- * @since 2022-12-31
+ * @since 2023-01-19
  */
-@Data
-@EqualsAndHashCode(callSuper = false)
+@Getter
+@Setter
+@TableName("promotion_space")
+@ApiModel(value = "PromotionSpace对象", description = "")
 public class PromotionSpace implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+  private static final long serialVersionUID = 1L;
 
-    @TableId(value = "id", type = IdType.AUTO)
-    private Integer id;
+  @ApiModelProperty("主键")
+  @TableId(value = "id", type = IdType.ASSIGN_ID)
+  private String id;
 
-    /**
-     * 名称
-     */
-    private String name;
+  @ApiModelProperty("乐观锁")
+  @TableField(fill = FieldFill.INSERT)
+  @Version
+  private Integer revision;
 
-    /**
-     * 广告位key
-     */
-    @TableField("spaceKey")
-    private String spaceKey;
+  @ApiModelProperty("创建时间")
+  @TableField(fill = FieldFill.INSERT)
+  private LocalDateTime gmtCreate;
 
-    @TableField("createTime")
-    private LocalDateTime createTime;
+  @ApiModelProperty("更新时间")
+  @TableField(fill = FieldFill.INSERT_UPDATE)
+  private LocalDateTime gmtModified;
 
-    @TableField("updateTime")
-    private LocalDateTime updateTime;
+  @ApiModelProperty("逻辑删除;1 表示删除，0 表示未删除。")
+  private Boolean isDeleted;
 
-    @TableField("isDel")
-    private Integer isDel;
+  @ApiModelProperty("名称")
+  private String name;
 
-
+  @ApiModelProperty("广告位关键字")
+  private String spaceKey;
 }

@@ -9,8 +9,8 @@ import com.hatcher.ad.entity.PromotionSpace;
  * </p>
  *
  * @author hatcher
- * @since 2022-12-31
+ * @since 2023å¹´01æ19æ¥
  */
-public interface IPromotionSpaceService extends IService<PromotionSpace> {
+public interface PromotionSpaceService extends IService<PromotionSpace> {
 
 }

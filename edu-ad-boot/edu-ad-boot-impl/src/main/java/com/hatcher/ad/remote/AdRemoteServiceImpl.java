@@ -3,8 +3,8 @@ package com.hatcher.ad.remote;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.hatcher.ad.entity.PromotionAd;
 import com.hatcher.ad.entity.PromotionSpace;
-import com.hatcher.ad.service.IPromotionAdService;
-import com.hatcher.ad.service.IPromotionSpaceService;
+import com.hatcher.ad.service.PromotionAdService;
+import com.hatcher.ad.service.PromotionSpaceService;
 import com.hatcher.dto.PromotionAdDTO;
 import com.hatcher.dto.PromotionSpaceDTO;
 import com.hatcher.remote.AdRemoteService;
@@ -25,9 +25,9 @@ import java.util.List;
 @DubboService
 public class AdRemoteServiceImpl implements AdRemoteService {
     @Autowired
-    private IPromotionSpaceService promotionSpaceService;
+    private PromotionSpaceService promotionSpaceService;
     @Autowired
-    private IPromotionAdService promotionAdService;
+    private PromotionAdService promotionAdService;
 
     @Override
     public List<PromotionSpaceDTO> getAllSpaces() {
@@ -40,17 +40,17 @@ public class AdRemoteServiceImpl implements AdRemoteService {
         List<PromotionSpaceDTO> spaceDTOList = new ArrayList<>();
         for (String spaceKey : spaceKeys) {
             QueryWrapper<PromotionSpace> spaceWrapper = new QueryWrapper();
-            spaceWrapper.eq("spaceKey", spaceKey);
+            spaceWrapper.eq("space_key", spaceKey);
             // 获取广告位信息
             PromotionSpace promotionSpace = promotionSpaceService.getOne(spaceWrapper);
 
             // 获取当前广告位下的所有广告信息 状态为上架 在有效期内
             QueryWrapper<PromotionAd> adWrapper = new QueryWrapper();
-            adWrapper.eq("spaceId", promotionSpace.getId());
+            adWrapper.eq("pk_space_id", promotionSpace.getId());
             adWrapper.eq("status", 1);
             LocalDateTime now = LocalDateTime.now();
-            adWrapper.ge("endTime", now);
-            adWrapper.le("startTime", now);
+            adWrapper.ge("end_time", now);
+            adWrapper.le("start_time", now);
             List<PromotionAd> adList = promotionAdService.list(adWrapper);
 
 

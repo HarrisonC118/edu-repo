@@ -19,66 +19,36 @@ import java.time.LocalDateTime;
 public class PromotionAdDTO {
     private static final long serialVersionUID = 1L;
 
+    private String id;
 
-    private Integer id;
+    private Integer revision;
 
-    /**
-     * 广告名
-     */
+    private LocalDateTime gmtCreate;
+
+    private LocalDateTime gmtModified;
+
+    private Boolean isDeleted;
+
     private String name;
 
-    /**
-     * 广告位id
-     */
+    private String pkSpaceId;
 
-    private Integer spaceId;
-
-    /**
-     * 精确搜索关键词
-     */
     private String keyword;
-
-    /**
-     * 静态广告的内容
-     */
 
     private String htmlContent;
 
-    /**
-     * 文字
-     */
-    private String text;
+    private String textContent;
 
-    /**
-     * 链接
-     */
     private String link;
-
-    /**
-     * 开始时间
-     */
 
     private LocalDateTime startTime;
 
-    /**
-     * 结束时间
-     */
-
     private LocalDateTime endTime;
 
+    private Boolean status;
 
-    private LocalDateTime createTime;
-
-
-    private LocalDateTime updateTime;
-
-    private Integer status;
-
-    /**
-     * 优先级
-     */
     private Integer priority;
 
-    private String img;
+    private String imgUrl;
 
 }

@@ -1,10 +1,10 @@
 package com.hatcher.ad.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import com.baomidou.mybatisplus.annotation.*;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -15,75 +15,67 @@ import java.time.LocalDateTime;
  * </p>
  *
  * @author hatcher
- * @since 2022-12-31
+ * @since 2023å¹´01æ19æ¥
  */
-@Data
-@EqualsAndHashCode(callSuper = false)
+@Getter
+@Setter
+@TableName("promotion_ad")
+@ApiModel(value = "PromotionAd对象", description = "")
 public class PromotionAd implements Serializable {
 
-    private static final long serialVersionUID = 1L;
+  private static final long serialVersionUID = 1L;
 
-    @TableId(value = "id", type = IdType.AUTO)
-    private Integer id;
+  @ApiModelProperty("主键")
+  @TableId(value = "id", type = IdType.ASSIGN_ID)
+  private String id;
 
-    /**
-     * 广告名
-     */
-    private String name;
+  @ApiModelProperty("乐观锁")
+  @TableField(fill = FieldFill.INSERT)
+  @Version
+  private Integer revision;
 
-    /**
-     * 广告位id
-     */
-    @TableField("spaceId")
-    private Integer spaceId;
+  @ApiModelProperty("创建时间")
+  @TableField(fill = FieldFill.INSERT)
+  private LocalDateTime gmtCreate;
 
-    /**
-     * 精确搜索关键词
-     */
-    private String keyword;
+  @ApiModelProperty("更新时间")
+  @TableField(fill = FieldFill.INSERT_UPDATE)
+  private LocalDateTime gmtModified;
 
-    /**
-     * 静态广告的内容
-     */
-    @TableField("htmlContent")
-    private String htmlContent;
+  @ApiModelProperty("逻辑删除;1 表示删除，0 表示未删除。")
+  @TableField(fill = FieldFill.INSERT)
+  private Boolean isDeleted;
 
-    /**
-     * 文字
-     */
-    private String text;
+  @ApiModelProperty("广告名称")
+  private String name;
 
-    /**
-     * 链接
-     */
-    private String link;
+  @ApiModelProperty("广告位id")
+  private String pkSpaceId;
 
-    /**
-     * 开始时间
-     */
-    @TableField("startTime")
-    private LocalDateTime startTime;
+  @ApiModelProperty("精确搜索的关键字")
+  private String keyword;
 
-    /**
-     * 结束时间
-     */
-    @TableField("endTime")
-    private LocalDateTime endTime;
+  @ApiModelProperty("静态广告的内容")
+  private String htmlContent;
 
-    @TableField("createTime")
-    private LocalDateTime createTime;
+  @ApiModelProperty("文字描述")
+  private String textContent;
 
-    @TableField("updateTime")
-    private LocalDateTime updateTime;
+  @ApiModelProperty("链接地址")
+  private String link;
 
-    private Integer status;
+  @ApiModelProperty("广告开始时间")
+  private LocalDateTime startTime;
 
-    /**
-     * 优先级
-     */
-    private Integer priority;
+  @ApiModelProperty("广告结束时间")
+  private LocalDateTime endTime;
 
-    private String img;
+  @ApiModelProperty("是否被禁用;1 表示禁用，0 表示未禁用。")
+  private Boolean status;
 
+  @ApiModelProperty("优先级")
+  private Integer priority;
 
+  @ApiModelProperty("图片地址")
+  private String imgUrl;
 }
