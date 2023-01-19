@@ -75,7 +75,16 @@ public class AdRemoteServiceImpl implements AdRemoteService {
         BeanUtils.copyProperties(spaceDTO, promotionSpace);
         // 保存或更新
         try {
-            promotionSpaceService.saveOrUpdate(promotionSpace);
+            //saveOrUpdate无法触发乐观锁，所以要手动判断
+            if (promotionSpace.getId() == null) {
+                promotionSpaceService.save(promotionSpace);
+            } else {
+                PromotionSpace byId = promotionSpaceService.getById(promotionSpace.getId());
+                byId.setName(promotionSpace.getName());
+                byId.setSpaceKey(promotionSpace.getSpaceKey());
+//                BeanUtils.copyProperties(promotionSpace, byId);
+                promotionSpaceService.updateById(byId);
+            }
             return ResponseDTO.success();
         } catch (Exception e) {
             e.printStackTrace();
@@ -84,11 +93,22 @@ public class AdRemoteServiceImpl implements AdRemoteService {
     }
 
     @Override
-    public PromotionSpaceDTO getSpaceById(Integer id) {
+    public PromotionSpaceDTO getSpaceById(String id) {
         PromotionSpace promotionSpace = promotionSpaceService.getById(id);
         PromotionSpaceDTO promotionSpaceDTO = new PromotionSpaceDTO();
         BeanUtils.copyProperties(promotionSpace, promotionSpaceDTO);
         return promotionSpaceDTO;
+    }
+
+    @Override
+    public ResponseDTO deleteSpaceById(String id) {
+        try {
+            promotionSpaceService.removeById(id);
+            return ResponseDTO.success();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseDTO.ofError("删除失败");
+        }
     }
 }
 
