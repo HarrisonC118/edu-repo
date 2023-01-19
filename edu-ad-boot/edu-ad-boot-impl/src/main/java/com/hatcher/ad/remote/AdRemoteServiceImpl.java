@@ -8,6 +8,7 @@ import com.hatcher.ad.service.PromotionSpaceService;
 import com.hatcher.dto.PromotionAdDTO;
 import com.hatcher.dto.PromotionSpaceDTO;
 import com.hatcher.remote.AdRemoteService;
+import com.hatcher.response.ResponseDTO;
 import com.hatcher.util.ConvertUtil;
 import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.BeanUtils;
@@ -65,6 +66,29 @@ public class AdRemoteServiceImpl implements AdRemoteService {
             spaceDTOList.add(promotionSpaceDTO);
         }
         return spaceDTOList;
+    }
+
+    @Override
+    public ResponseDTO saveOrUpdateSpace(PromotionSpaceDTO spaceDTO) {
+        // 把DTO转换成Entity
+        PromotionSpace promotionSpace = new PromotionSpace();
+        BeanUtils.copyProperties(spaceDTO, promotionSpace);
+        // 保存或更新
+        try {
+            promotionSpaceService.saveOrUpdate(promotionSpace);
+            return ResponseDTO.success();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseDTO.ofError("保存或更新失败");
+        }
+    }
+
+    @Override
+    public PromotionSpaceDTO getSpaceById(Integer id) {
+        PromotionSpace promotionSpace = promotionSpaceService.getById(id);
+        PromotionSpaceDTO promotionSpaceDTO = new PromotionSpaceDTO();
+        BeanUtils.copyProperties(promotionSpace, promotionSpaceDTO);
+        return promotionSpaceDTO;
     }
 }
 

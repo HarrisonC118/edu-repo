@@ -1,11 +1,10 @@
 package com.hatcher.ad.controller;
 
+import com.hatcher.dto.PromotionSpaceDTO;
 import com.hatcher.remote.AdRemoteService;
 import com.hatcher.response.ResponseDTO;
 import org.apache.dubbo.config.annotation.DubboReference;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author hatcher
@@ -28,4 +27,14 @@ public class AdController {
         return ResponseDTO.success(adRemoteService.getAdsBySpaceId(spaceKeys));
     }
 
+    @PostMapping("space/saveOrUpdateSpace")
+    public ResponseDTO saveOrUpdateSpace(@RequestBody PromotionSpaceDTO spaceDTO) {
+        return adRemoteService.saveOrUpdateSpace(spaceDTO);
+    }
+
+    @GetMapping("space/getSpaceById")
+    public ResponseDTO getSpaceById(@RequestParam("id") Integer id) {
+        PromotionSpaceDTO spaceDTO = adRemoteService.getSpaceById(id);
+        return ResponseDTO.success(spaceDTO);
+    }
 }

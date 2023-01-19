@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="修改数据库字段名称，并添加mybatisPlus的数据字段填充">
-      <change afterPath="$PROJECT_DIR$/edu-front-boot/src/main/java/com/hatcher/ad/controller/AdController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-front-boot/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="完成前端请求的链路测试">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-front-boot/src/main/java/com/hatcher/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-front-boot/src/main/java/com/hatcher/FrontApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/src/main/java/com/hatcher/remote/AdRemoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/src/main/java/com/hatcher/remote/AdRemoteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/entity/PromotionAd.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/entity/PromotionAd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/entity/PromotionSpace.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/entity/PromotionSpace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/remote/AdRemoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/remote/AdRemoteServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/test/java/com/hatcher/AutoGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/test/java/com/hatcher/AutoGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-admin-boot/src/main/java/com/hatcher/ad/controller/AdController.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-admin-boot/src/main/java/com/hatcher/ad/controller/AdController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +118,7 @@
       <recent name="D:\No03.Code\pro-edu\pro-edu-backend\edu-ad-boot\edu-ad-boot-impl\src\main\resources\mapper\ad" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+  <component name="RunManager" selected="Spring Boot.AdminApplication">
     <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hatcher.Generator" />
       <module name="edu-ad-boot-impl" />
@@ -182,10 +186,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GatewayApplication" />
-        <item itemvalue="Spring Boot.FrontApplication" />
-        <item itemvalue="Spring Boot.EduAdApplication" />
         <item itemvalue="Spring Boot.AdminApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.EduAdApplication" />
+        <item itemvalue="Spring Boot.FrontApplication" />
         <item itemvalue="应用程序.Generator" />
       </list>
     </recent_temporary>
@@ -220,7 +224,7 @@
       <workItem from="1672995018519" duration="6349000" />
       <workItem from="1674096604649" duration="594000" />
       <workItem from="1674105373210" duration="8385000" />
-      <workItem from="1674126684145" duration="4529000" />
+      <workItem from="1674126684145" duration="8056000" />
     </task>
     <task id="LOCAL-00001" summary="添加java属性拷贝工具类">
       <created>1672392800054</created>
@@ -362,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674113564545</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="完成前端请求的链路测试">
+      <created>1674133092566</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1674133092566</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +399,8 @@
     <MESSAGE value="完成获取广告位的信息&#10;AdController:&quot;space/getAllSpaces&quot;,&quot;space/getAdsBySpaceKey&quot;" />
     <MESSAGE value="完成自动生成器的修改" />
     <MESSAGE value="修改数据库字段名称，并添加mybatisPlus的数据字段填充" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改数据库字段名称，并添加mybatisPlus的数据字段填充" />
+    <MESSAGE value="完成前端请求的链路测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成前端请求的链路测试" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
