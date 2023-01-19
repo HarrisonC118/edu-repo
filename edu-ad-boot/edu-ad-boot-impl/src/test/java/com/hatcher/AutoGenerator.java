@@ -1,6 +1,7 @@
 package com.hatcher;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.generator.FastAutoGenerator;
 import com.baomidou.mybatisplus.generator.config.OutputFile;
 import com.baomidou.mybatisplus.generator.config.TemplateType;
@@ -80,7 +81,11 @@ public class AutoGenerator implements Serializable {
                                 .entityBuilder() //开启实体类配置
                                 .addTableFills(new Column(config.getString("create_time"), FieldFill.INSERT)) //配置添加自动填充字段
                                 .addTableFills(new Column(config.getString("update_time"), FieldFill.INSERT_UPDATE)) //添加和更新配置自动填充字段
+                                .addTableFills(new Column(config.getString("is_delete"), FieldFill.INSERT)) //配置添加自动填充字段
                                 .enableLombok() //开启lombok
+//                                .logicDeletePropertyName(config.getString("is_delete")) //配置逻辑删除字段
+                                .versionPropertyName(config.getString("version")) //配置乐观锁字段
+                                .idType(IdType.ASSIGN_ID)
                                 .controllerBuilder().enableHyphenStyle().enableRestStyle()
 
                         //.enableChainModel()//开启lombok链式操作@Accessors(chain = true)

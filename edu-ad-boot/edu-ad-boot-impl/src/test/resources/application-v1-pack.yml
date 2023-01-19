@@ -39,5 +39,8 @@ allTableName: false
 # 设置过滤表前缀
 tablePrefix: tb_
 # 设置自动填充的字段
-create_time: createTime
-update_time: updateTime
+create_time: gmt_create
+update_time: gmt_modified
+is_delete: isDeleted
+# 设置乐观索
+version: revision

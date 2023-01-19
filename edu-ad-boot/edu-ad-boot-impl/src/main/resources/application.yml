@@ -34,3 +34,6 @@ dubbo:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: is_deleted # 全局逻辑删除的实体字段名
