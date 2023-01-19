@@ -33,8 +33,13 @@ public class AdController {
     }
 
     @GetMapping("space/getSpaceById")
-    public ResponseDTO getSpaceById(@RequestParam("id") Integer id) {
+    public ResponseDTO getSpaceById(@RequestParam("id") String id) {
         PromotionSpaceDTO spaceDTO = adRemoteService.getSpaceById(id);
         return ResponseDTO.success(spaceDTO);
+    }
+
+    @PostMapping("space/deleteSpaceById")
+    public ResponseDTO deleteSpaceById(@RequestBody PromotionSpaceDTO spaceDTO) {
+        return adRemoteService.deleteSpaceById(spaceDTO.getId());
     }
 }

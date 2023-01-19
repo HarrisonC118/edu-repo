@@ -41,5 +41,13 @@ public interface AdRemoteService {
      * @param id
      * @return
      */
-    PromotionSpaceDTO getSpaceById(Integer id);
+    PromotionSpaceDTO getSpaceById(String id);
+
+    /**
+     * 根据id删除广告位信息
+     *
+     * @param id
+     * @return
+     */
+    ResponseDTO deleteSpaceById(String id);
 }
