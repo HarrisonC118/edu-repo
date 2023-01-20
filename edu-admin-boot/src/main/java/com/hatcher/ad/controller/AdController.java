@@ -60,4 +60,9 @@ public class AdController {
         PromotionAdDTO adDTO = adRemoteService.getAdById(id);
         return ResponseDTO.success(adDTO);
     }
+
+    @PostMapping("deleteAdById")
+    public ResponseDTO deleteAdById(@RequestBody PromotionAdDTO adDTO) {
+        return adRemoteService.deleteAdById(adDTO.getId());
+    }
 }

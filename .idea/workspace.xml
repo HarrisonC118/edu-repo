@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="Ad模块：完成添加广告和修改广告的功能">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="Ad模块：完成根据Id获取对应广告功能">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/src/main/java/com/hatcher/remote/AdRemoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/src/main/java/com/hatcher/remote/AdRemoteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/remote/AdRemoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/remote/AdRemoteServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu-admin-boot/src/main/java/com/hatcher/ad/controller/AdController.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-admin-boot/src/main/java/com/hatcher/ad/controller/AdController.java" afterDir="false" />
@@ -223,7 +222,7 @@
       <workItem from="1674096604649" duration="594000" />
       <workItem from="1674105373210" duration="8385000" />
       <workItem from="1674126684145" duration="12601000" />
-      <workItem from="1674181690623" duration="3749000" />
+      <workItem from="1674181690623" duration="5144000" />
     </task>
     <task id="LOCAL-00001" summary="添加java属性拷贝工具类">
       <created>1672392800054</created>
@@ -428,14 +427,20 @@
       <option name="project" value="LOCAL" />
       <updated>1674185519812</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Ad模块：完成根据Id获取对应广告功能">
+      <created>1674185974491</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1674185974491</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加java属性拷贝工具类" />
     <MESSAGE value="配置eureka" />
     <MESSAGE value="完成响应对象ResponseDTO" />
     <MESSAGE value="完成对父项目的配置" />
@@ -460,7 +465,8 @@
     <MESSAGE value="解决乐观锁无法使用的问题" />
     <MESSAGE value="解决LocalDateTime无法格式化字符串的问题" />
     <MESSAGE value="Ad模块：完成添加广告和修改广告的功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ad模块：完成添加广告和修改广告的功能" />
+    <MESSAGE value="Ad模块：完成根据Id获取对应广告功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ad模块：完成根据Id获取对应广告功能" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -102,6 +102,10 @@ public class AdRemoteServiceImpl implements AdRemoteService {
     @Override
     public ResponseDTO deleteSpaceById(String id) {
         try {
+            PromotionSpace promotionSpace = promotionSpaceService.getById(id);
+            if (promotionSpace == null) {
+                return ResponseDTO.ofError("广告位不存在");
+            }
             promotionSpaceService.removeById(id);
             return ResponseDTO.success();
         } catch (Exception e) {
@@ -151,6 +155,24 @@ public class AdRemoteServiceImpl implements AdRemoteService {
         PromotionAdDTO promotionAdDTO = new PromotionAdDTO();
         BeanUtils.copyProperties(promotionAd, promotionAdDTO);
         return promotionAdDTO;
+    }
+
+    @Override
+    public ResponseDTO deleteAdById(String id) {
+        try {
+            PromotionAd promotionAd = promotionAdService.getById(id);
+            if (promotionAd == null) {
+                return ResponseDTO.ofError("广告不存在");
+            }
+            if (promotionAd.getStatus()) {
+                return ResponseDTO.ofError("上架状态的广告不能删除");
+            }
+            promotionAdService.removeById(id);
+            return ResponseDTO.success();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseDTO.ofError("删除失败");
+        }
     }
 }
 

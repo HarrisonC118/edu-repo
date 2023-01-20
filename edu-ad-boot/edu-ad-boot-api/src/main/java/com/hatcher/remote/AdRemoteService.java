@@ -74,4 +74,12 @@ public interface AdRemoteService {
      * @return
      */
     PromotionAdDTO getAdById(String id);
+
+    /**
+     * 根据id删除广告信息
+     *
+     * @param id
+     * @return
+     */
+    ResponseDTO deleteAdById(String id);
 }
