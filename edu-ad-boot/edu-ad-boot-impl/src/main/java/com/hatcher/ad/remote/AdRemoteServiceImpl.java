@@ -82,7 +82,6 @@ public class AdRemoteServiceImpl implements AdRemoteService {
                 PromotionSpace byId = promotionSpaceService.getById(promotionSpace.getId());
                 byId.setName(promotionSpace.getName());
                 byId.setSpaceKey(promotionSpace.getSpaceKey());
-//                BeanUtils.copyProperties(promotionSpace, byId);
                 promotionSpaceService.updateById(byId);
             }
             return ResponseDTO.success();
