@@ -1,5 +1,6 @@
 package com.hatcher.remote;
 
+import com.hatcher.dto.PromotionAdDTO;
 import com.hatcher.dto.PromotionSpaceDTO;
 import com.hatcher.response.ResponseDTO;
 
@@ -50,4 +51,19 @@ public interface AdRemoteService {
      * @return
      */
     ResponseDTO deleteSpaceById(String id);
+
+    /**
+     * 获取所有广告信息
+     *
+     * @return List<PromotionAdDTO>
+     */
+    List<PromotionAdDTO> getAllAds();
+
+    /**
+     * 保存或更新广告信息
+     *
+     * @param adDTO
+     * @return
+     */
+    ResponseDTO saveOrUpdateAd(PromotionAdDTO adDTO);
 }

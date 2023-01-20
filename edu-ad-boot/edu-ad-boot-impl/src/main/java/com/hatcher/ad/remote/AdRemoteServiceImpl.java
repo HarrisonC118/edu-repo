@@ -109,5 +109,40 @@ public class AdRemoteServiceImpl implements AdRemoteService {
             return ResponseDTO.ofError("删除失败");
         }
     }
+
+    @Override
+    public List<PromotionAdDTO> getAllAds() {
+        List<PromotionAd> promotionAdList = promotionAdService.list();
+        return ConvertUtil.copyListProperties(promotionAdList, PromotionAdDTO::new);
+    }
+
+    @Override
+    public ResponseDTO saveOrUpdateAd(PromotionAdDTO adDTO) {
+        PromotionAd promotionAd = new PromotionAd();
+        BeanUtils.copyProperties(adDTO, promotionAd);
+        try {
+            if (promotionAd.getId() == null) {
+                promotionAd.setStatus(true);
+                promotionAdService.save(promotionAd);
+            } else {
+                PromotionAd byId = promotionAdService.getById(promotionAd.getId());
+                byId.setName(promotionAd.getName());
+                byId.setStartTime(promotionAd.getStartTime());
+                byId.setEndTime(promotionAd.getEndTime());
+                byId.setPkSpaceId(promotionAd.getPkSpaceId());
+                byId.setLink(promotionAd.getLink());
+                byId.setImgUrl(promotionAd.getImgUrl());
+                byId.setPriority(promotionAd.getPriority());
+                byId.setStatus(promotionAd.getStatus());
+                byId.setHtmlContent(promotionAd.getHtmlContent());
+                byId.setTextContent(promotionAd.getTextContent());
+                promotionAdService.updateById(byId);
+            }
+            return ResponseDTO.success();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseDTO.ofError("保存或更新失败");
+        }
+    }
 }
 

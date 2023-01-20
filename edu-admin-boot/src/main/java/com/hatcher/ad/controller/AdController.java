@@ -1,5 +1,6 @@
 package com.hatcher.ad.controller;
 
+import com.hatcher.dto.PromotionAdDTO;
 import com.hatcher.dto.PromotionSpaceDTO;
 import com.hatcher.remote.AdRemoteService;
 import com.hatcher.response.ResponseDTO;
@@ -22,10 +23,6 @@ public class AdController {
         return ResponseDTO.success(adRemoteService.getAllSpaces());
     }
 
-    @GetMapping("space/getAdsBySpaceKey")
-    public ResponseDTO getAdsBySpaceKey(String[] spaceKeys) {
-        return ResponseDTO.success(adRemoteService.getAdsBySpaceId(spaceKeys));
-    }
 
     @PostMapping("space/saveOrUpdateSpace")
     public ResponseDTO saveOrUpdateSpace(@RequestBody PromotionSpaceDTO spaceDTO) {
@@ -41,5 +38,20 @@ public class AdController {
     @PostMapping("space/deleteSpaceById")
     public ResponseDTO deleteSpaceById(@RequestBody PromotionSpaceDTO spaceDTO) {
         return adRemoteService.deleteSpaceById(spaceDTO.getId());
+    }
+
+    @GetMapping("getAdsBySpaceKey")
+    public ResponseDTO getAdsBySpaceKey(String[] spaceKeys) {
+        return ResponseDTO.success(adRemoteService.getAdsBySpaceId(spaceKeys));
+    }
+
+    @GetMapping("getAllAds")
+    public ResponseDTO getAllAds() {
+        return ResponseDTO.success(adRemoteService.getAllAds());
+    }
+
+    @PostMapping("saveOrUpdateAd")
+    public ResponseDTO saveOrUpdateAd(@RequestBody PromotionAdDTO adDTO) {
+        return adRemoteService.saveOrUpdateAd(adDTO);
     }
 }
