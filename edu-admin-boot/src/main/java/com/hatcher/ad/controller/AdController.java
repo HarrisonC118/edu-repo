@@ -54,4 +54,10 @@ public class AdController {
     public ResponseDTO saveOrUpdateAd(@RequestBody PromotionAdDTO adDTO) {
         return adRemoteService.saveOrUpdateAd(adDTO);
     }
+
+    @GetMapping("getAdById")
+    public ResponseDTO getAdById(@RequestParam("id") String id) {
+        PromotionAdDTO adDTO = adRemoteService.getAdById(id);
+        return ResponseDTO.success(adDTO);
+    }
 }

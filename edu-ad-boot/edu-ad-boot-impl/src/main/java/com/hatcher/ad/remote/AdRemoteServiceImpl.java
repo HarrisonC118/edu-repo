@@ -144,5 +144,13 @@ public class AdRemoteServiceImpl implements AdRemoteService {
             return ResponseDTO.ofError("保存或更新失败");
         }
     }
+
+    @Override
+    public PromotionAdDTO getAdById(String id) {
+        PromotionAd promotionAd = promotionAdService.getById(id);
+        PromotionAdDTO promotionAdDTO = new PromotionAdDTO();
+        BeanUtils.copyProperties(promotionAd, promotionAdDTO);
+        return promotionAdDTO;
+    }
 }
 

@@ -66,4 +66,12 @@ public interface AdRemoteService {
      * @return
      */
     ResponseDTO saveOrUpdateAd(PromotionAdDTO adDTO);
+
+    /**
+     * 根据id获取广告信息
+     *
+     * @param id
+     * @return
+     */
+    PromotionAdDTO getAdById(String id);
 }
