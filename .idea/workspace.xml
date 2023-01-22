@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="Ad模块：完成根据Id获取对应广告功能">
+    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="Ad模块：优化删除流程">
+      <change afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-impl/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-impl/src/test/java/com/hatcher/AutoGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-impl/src/test/java/com/hatcher/Generator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-impl/src/test/java/com/hatcher/GetProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-impl/src/test/resources/application-v1-pack.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edu-user-boot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/src/main/java/com/hatcher/remote/AdRemoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-api/src/main/java/com/hatcher/remote/AdRemoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/remote/AdRemoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-ad-boot/edu-ad-boot-impl/src/main/java/com/hatcher/ad/remote/AdRemoteServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-admin-boot/src/main/java/com/hatcher/ad/controller/AdController.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-admin-boot/src/main/java/com/hatcher/ad/controller/AdController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-bom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-bom/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,8 +93,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "corretto-1.8",
-    "last_opened_file_path": "D:/No03.Code/pro-edu/pro-edu-backend/edu-front-boot/src/main/resources",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "D:/No03.Code/pro-edu/pro-edu-backend/edu-user-boot/edu-user-boot-impl/src/main/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -105,20 +112,24 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\No03.Code\pro-edu\pro-edu-backend\edu-user-boot\edu-user-boot-impl\src\main\java" />
+      <recent name="D:\No03.Code\pro-edu\pro-edu-backend\edu-user-boot\edu-user-boot-impl\src\main\resources\mapper.user" />
+      <recent name="D:\No03.Code\pro-edu\pro-edu-backend\edu-user-boot\edu-user-boot-impl\src\main\resources" />
+      <recent name="D:\No03.Code\pro-edu\pro-edu-backend\edu-user-boot\edu-user-boot-impl\src" />
       <recent name="D:\No03.Code\pro-edu\pro-edu-backend\edu-front-boot\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\No03.Code\pro-edu\pro-edu-backend\edu-user-boot\edu-user-boot-impl\src\main\java" />
+      <recent name="D:\No03.Code\pro-edu\pro-edu-backend\edu-user-boot\edu-user-boot-impl\src\main\java\com\hatcher\user" />
+      <recent name="D:\No03.Code\pro-edu\pro-edu-backend\edu-user-boot\edu-user-boot-impl\src\main\resources" />
+      <recent name="D:\No03.Code\pro-edu\pro-edu-backend\edu-ad-boot" />
       <recent name="D:\No03.Code\pro-edu\pro-edu-backend\edu-ad-boot\edu-ad-boot-impl\src\main\java\com\hatcher\ad\entity" />
-      <recent name="D:\No03.Code\pro-edu\pro-edu-backend\edu-ad-boot\edu-ad-boot-impl\src\main\java\com\hatcher\ad\mapper" />
-      <recent name="D:\No03.Code\pro-edu\pro-edu-backend\edu-ad-boot\edu-ad-boot-impl\src\main\java\com\hatcher\ad\service\impl" />
-      <recent name="D:\No03.Code\pro-edu\pro-edu-backend\edu-ad-boot\edu-ad-boot-impl\src\main\java\com\hatcher\ad\service" />
-      <recent name="D:\No03.Code\pro-edu\pro-edu-backend\edu-ad-boot\edu-ad-boot-impl\src\main\resources\mapper\ad" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.EduAdApplication">
-    <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="应用程序.Generator (1)">
+    <configuration name="Generator (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hatcher.Generator" />
-      <module name="edu-ad-boot-impl" />
+      <module name="edu-user-boot-impl" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.hatcher.*" />
@@ -183,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Generator (1)" />
         <item itemvalue="Spring Boot.AdminApplication" />
         <item itemvalue="Spring Boot.EduAdApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.FrontApplication" />
-        <item itemvalue="应用程序.Generator" />
       </list>
     </recent_temporary>
   </component>
