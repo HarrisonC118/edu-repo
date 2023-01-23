@@ -1,0 +1,39 @@
+server:
+  port: 8002
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: edu-user
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.115.214.213:8848
+      config:
+        server-addr: 47.115.214.213:8848
+        file-extension: yaml
+        refresh-enabled: true # 是否动态刷新,默认为false
+        import-check:
+          enabled: false # 是否开启配置文件导入检查,默认为true
+  config:
+    import: nacos:edu-user-dev.yaml
+dubbo:
+  application:
+    name: edu-ad
+  protocol:
+    name: dubbo
+    port: -1
+  scan:
+    base-packages: com.hatcher.user.remote
+  registry:
+    address: nacos://47.115.214.213:8848
+#  config-center:
+#    address: nacos://47.115.214.213:8848
+#    config-file: edu-ad-dev.yaml
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: isDeleted # 全局逻辑删除的实体字段名
