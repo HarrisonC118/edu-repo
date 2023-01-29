@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="引入hutool工具包">
-      <change afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-api/src/main/java/com/hatcher/bo/UserQueryBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-api/src/main/java/com/hatcher/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-api/src/main/java/com/hatcher/dto/UserPhoneVerificationCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-api/src/main/java/com/hatcher/dto/UserWeixin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-api/src/main/java/com/hatcher/remote/UserRemoteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-api/src/main/java/com/hatcher/remote/UserWeixinRemoteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-api/src/main/java/com/hatcher/remote/VerificationCodeRemoteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-impl/src/main/java/com/hatcher/user/EduUserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-impl/src/main/java/com/hatcher/user/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-impl/src/main/java/com/hatcher/user/remote/UserRemoteServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-impl/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-impl/src/main/resources/logback.xml" afterDir="false" />
+    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="完成部分user模块功能">
+      <change afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-impl/src/test/java/com/hatcher/EncoderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-bom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-bom/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-api/src/main/java/com/hatcher/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-api/src/main/java/com/hatcher/dto/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-impl/src/main/java/com/hatcher/user/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-impl/src/main/java/com/hatcher/user/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-impl/src/main/java/com/hatcher/user/remote/UserRemoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-impl/src/main/java/com/hatcher/user/remote/UserRemoteServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edu-user-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-user-boot/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +56,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../No06.Repository/org/springframework/security/spring-security-crypto/6.0.0/spring-security-crypto-6.0.0-sources.jar!/org/springframework/security/crypto/bcrypt/BCryptPasswordEncoder.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="JRebelWorkspace">
     <option name="jrebelEnabledAutocompile" value="true" />
   </component>
@@ -91,31 +87,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "D:/No03.Code/pro-edu/pro-edu-backend/edu-user-boot/edu-user-boot-impl/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "4139ed33dca852e79d30e369e9cf7913",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/No03.Code/pro-edu/pro-edu-backend/edu-user-boot/edu-user-boot-impl/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;4139ed33dca852e79d30e369e9cf7913&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
@@ -135,7 +131,14 @@
       <recent name="D:\No03.Code\pro-edu\pro-edu-backend\edu-ad-boot\edu-ad-boot-impl\src\main\java\com\hatcher\ad\entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.EduUserApplication">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.EduAdApplication">
     <configuration name="Generator (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hatcher.Generator" />
       <module name="edu-user-boot-impl" />
@@ -149,15 +152,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="edu-admin-boot" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hatcher.AdminApplication" />
+    <configuration name="EncoderTest.testEncode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="edu-user-boot-impl" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.hatcher.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.hatcher" />
+      <option name="MAIN_CLASS_NAME" value="com.hatcher.EncoderTest" />
+      <option name="METHOD_NAME" value="testEncode" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -203,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.EduUserApplication" />
-        <item itemvalue="应用程序.Generator (1)" />
-        <item itemvalue="Spring Boot.AdminApplication" />
         <item itemvalue="Spring Boot.EduAdApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="JUnit.EncoderTest.testEncode" />
+        <item itemvalue="Spring Boot.EduUserApplication" />
+        <item itemvalue="应用程序.Generator (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +249,11 @@
       <workItem from="1674105373210" duration="8385000" />
       <workItem from="1674126684145" duration="12601000" />
       <workItem from="1674181690623" duration="5144000" />
-      <workItem from="1674476587409" duration="6179000" />
+      <workItem from="1674476587409" duration="6460000" />
+      <workItem from="1674607360288" duration="7212000" />
+      <workItem from="1674616485740" duration="757000" />
+      <workItem from="1674740185900" duration="737000" />
+      <workItem from="1674959409949" duration="2227000" />
     </task>
     <task id="LOCAL-00001" summary="添加java属性拷贝工具类">
       <created>1672392800054</created>
@@ -469,7 +479,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674479036322</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="美化日志输出格式">
+      <created>1674483468802</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1674483468802</updated>
+    </task>
+    <task id="LOCAL-00034" summary="完成部分user模块功能">
+      <created>1674483532135</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1674483532135</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,8 +501,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="完成对父项目的配置" />
-    <MESSAGE value="完成配置中心" />
     <MESSAGE value="添加忽略文件" />
     <MESSAGE value="调通广告服务模块" />
     <MESSAGE value="上传没必要文件" />
@@ -502,7 +524,9 @@
     <MESSAGE value="Ad模块：完成根据Id获取对应广告功能" />
     <MESSAGE value="user模块：框架搭建" />
     <MESSAGE value="引入hutool工具包" />
-    <option name="LAST_COMMIT_MESSAGE" value="引入hutool工具包" />
+    <MESSAGE value="美化日志输出格式" />
+    <MESSAGE value="完成部分user模块功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成部分user模块功能" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -33,5 +33,4 @@ public class UserDTO implements Serializable {
     private Boolean isExpired;
     private Boolean isLocked;
     private String status;
-    private String salt;
 }

@@ -96,8 +96,4 @@ public class User implements Serializable {
      */
     private String status;
 
-    /**
-     * 密码加盐
-     */
-    private String salt;
 }

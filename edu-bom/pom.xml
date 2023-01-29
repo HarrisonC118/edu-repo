@@ -10,6 +10,11 @@
     <packaging>pom</packaging>
     <modules>
         <module>../edu-user-boot</module>
+        <module>../edu-ad-boot</module>
+        <module>../edu-admin-boot</module>
+        <module>../edu-common</module>
+        <module>../edu-front-boot</module>
+        <module>../edu-gateway-boot</module>
     </modules>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
