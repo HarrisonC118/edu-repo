@@ -103,4 +103,12 @@ public interface UserRemoteService {
      * @return
      */
     boolean forbidUser(Integer userId);
+
+    /**
+     * 查看用户名是否存在
+     *
+     * @param username 用户名
+     * @return
+     */
+    boolean isExistUser(String username);
 }

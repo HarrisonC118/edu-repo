@@ -15,6 +15,7 @@
         <module>../edu-common</module>
         <module>../edu-front-boot</module>
         <module>../edu-gateway-boot</module>
+        <module>../edu-oauth-boot</module>
     </modules>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

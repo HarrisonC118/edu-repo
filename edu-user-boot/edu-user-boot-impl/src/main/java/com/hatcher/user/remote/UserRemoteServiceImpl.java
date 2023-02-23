@@ -43,6 +43,7 @@ public class UserRemoteServiceImpl implements UserRemoteService {
         return dto;
     }
 
+
     @Override
     public UserDTO getUserByPhone(String phone) {
         List<User> list = userService.lambdaQuery().eq(User::getPhone, phone).orderByDesc(User::getId).list();
@@ -202,5 +203,14 @@ public class UserRemoteServiceImpl implements UserRemoteService {
             // TODO 发送mq消息，让用户登录失效
         }
         return result;
+    }
+
+    @Override
+    public boolean isExistUser(String username) {
+        User user = userService.lambdaQuery().eq(User::getPhone, username).one();
+        if (user != null) {
+            return true;
+        }
+        return false;
     }
 }

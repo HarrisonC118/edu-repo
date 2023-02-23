@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/edu-common/pom.xml" />
         <option value="$PROJECT_DIR$/edu-admin-boot/pom.xml" />
         <option value="$PROJECT_DIR$/edu-bom/pom.xml" />
+        <option value="$PROJECT_DIR$/edu-oauth-boot/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
