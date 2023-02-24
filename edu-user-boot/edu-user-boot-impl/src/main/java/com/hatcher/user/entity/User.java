@@ -49,6 +49,7 @@ public class User implements Serializable {
     /**
      * 逻辑删除;1 表示删除，0 表示未删除。
      */
+    @TableField(fill = FieldFill.INSERT)
     private Boolean isDeleted;
 
     /**
@@ -79,21 +80,25 @@ public class User implements Serializable {
     /**
      * 是否有效
      */
+    @TableField(fill = FieldFill.INSERT)
     private Boolean isValid;
 
     /**
      * 是否过期
      */
+    @TableField(fill = FieldFill.INSERT)
     private Boolean isExpired;
 
     /**
      * 是否被锁定
      */
+    @TableField(fill = FieldFill.INSERT)
     private Boolean isLocked;
 
     /**
      * 用户状态;ENABLE：能登录 DISABLE：不能登录
      */
+    @TableField(fill = FieldFill.INSERT)
     private String status;
 
 }

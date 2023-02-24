@@ -2,15 +2,21 @@ package com.hatcher.oauth.config;
 
 import com.hatcher.oauth.authenticate.UserDetailsServiceImpl;
 import com.hatcher.oauth.filter.JsonLoginFilter;
+import com.hatcher.oauth.filter.JwtAuthenticationFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.authentication.AuthenticationProvider;
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.security.web.authentication.logout.LogoutHandler;
 
 /**
  * @author hatcher
@@ -21,6 +27,10 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfig {
     @Autowired
     private UserDetailsServiceImpl userDetailsService;
+    @Autowired
+    private JwtAuthenticationFilter jwtAuthenticationFilter;
+    @Autowired
+    private LogoutHandler logoutHandler;
 
     @Bean
     public JsonLoginFilter jsonLoginFilter(AuthenticationManager authenticationManager) {
@@ -28,7 +38,6 @@ public class SecurityConfig {
         jsonLoginFilter.setUsernameParameter("phone");
         jsonLoginFilter.setPasswordParameter("password");
         jsonLoginFilter.setFilterProcessesUrl("/doLogin");
-//        jsonLoginFilter.setSessionAuthenticationStrategy(SessionAuthenticationStrategy);
         jsonLoginFilter.setAuthenticationManager(authenticationManager);
         jsonLoginFilter.setAuthenticationSuccessHandler((request, response, authentication) -> {
             response.setContentType("application/json;charset=utf-8");
@@ -44,22 +53,26 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityChain(HttpSecurity http, AuthenticationManager authenticationManager) throws Exception {
         http.authorizeHttpRequests()
-//                .requestMatchers("/login/**").permitAll()
+                .requestMatchers("/authentication/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .logout()
+                .logoutUrl("/authentication/logout")
+                .addLogoutHandler(logoutHandler)
+                .logoutSuccessHandler((request, response, authentication) -> SecurityContextHolder.clearContext())
+//                .and()
+//                .formLogin()
                 .and()
-                .formLogin()
+                .sessionManagement()
+                .sessionCreationPolicy(SessionCreationPolicy.ALWAYS)
                 .and()
-                .csrf().disable();
-        http.addFilterAt(jsonLoginFilter(authenticationManager), UsernamePasswordAuthenticationFilter.class);
+                .csrf().disable()
+                .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
+                .authenticationProvider(customAuthenticationProvider());
+//        http.addFilterAt(jsonLoginFilter(authenticationManager), UsernamePasswordAuthenticationFilter.class);;
         return http.build();
     }
 
-    //    @Bean
-//    public void configure(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception {
-//        authenticationManagerBuilder.userDetailsService(userDetailsService));
-//    }
     @Bean
     public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
@@ -72,17 +85,16 @@ public class SecurityConfig {
      * @return
      * @throws Exception
      */
-//    @Bean
-//    public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
-//        return authenticationConfiguration.getAuthenticationManager();
-//    }
     @Bean
-    public AuthenticationManager authManager(HttpSecurity http) throws Exception {
-        AuthenticationManagerBuilder authenticationManagerBuilder =
-                http.getSharedObject(AuthenticationManagerBuilder.class);
-        authenticationManagerBuilder.userDetailsService(userDetailsService);
-//        authenticationManagerBuilder.authenticationProvider(customMobileAuthenticationProvider);
-//        authenticationManagerBuilder.authenticationProvider(authProvider());
-        return authenticationManagerBuilder.build();
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
+        return authenticationConfiguration.getAuthenticationManager();
+    }
+
+    @Bean
+    public AuthenticationProvider customAuthenticationProvider() {
+        DaoAuthenticationProvider daoAuthenticationProvider = new DaoAuthenticationProvider();
+        daoAuthenticationProvider.setUserDetailsService(userDetailsService);
+        daoAuthenticationProvider.setPasswordEncoder(passwordEncoder());
+        return daoAuthenticationProvider;
     }
 }

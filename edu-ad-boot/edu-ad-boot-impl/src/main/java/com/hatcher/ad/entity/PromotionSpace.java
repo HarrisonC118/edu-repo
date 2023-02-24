@@ -34,7 +34,7 @@ public class PromotionSpace implements Serializable {
 
   @TableField(fill = FieldFill.INSERT_UPDATE)
   private LocalDateTime gmtModified;
-
+  @TableField(fill = FieldFill.INSERT)
   private Boolean isDeleted;
 
   private String name;
