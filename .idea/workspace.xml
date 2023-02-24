@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="添加正则校验工具，并完成手机号格式校验">
-      <change afterPath="$PROJECT_DIR$/edu-front-boot/src/main/java/com/hatcher/interceptor/LoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-front-boot/src/main/java/com/hatcher/login/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-oauth-boot/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-oauth-boot/src/main/java/com/hatcher/oauth/EduOauthBootApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-oauth-boot/src/main/java/com/hatcher/oauth/authenticate/UserDetailsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-oauth-boot/src/main/java/com/hatcher/oauth/authenticate/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-oauth-boot/src/main/java/com/hatcher/oauth/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-oauth-boot/src/main/java/com/hatcher/oauth/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-oauth-boot/src/main/java/com/hatcher/oauth/remote/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-oauth-boot/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-oauth-boot/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edu-oauth-boot/src/test/java/com/hatcher/oauth/EduOauthBootApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c807f6e1-e373-48f5-b98c-9eb671e4d93f" name="变更" comment="完成自定义数据源的登录认证">
+      <change afterPath="$PROJECT_DIR$/edu-oauth-boot/src/main/java/com/hatcher/oauth/filter/JsonLoginFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-bom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/edu-bom/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-api/src/main/java/com/hatcher/remote/UserRemoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-api/src/main/java/com/hatcher/remote/UserRemoteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-impl/src/main/java/com/hatcher/user/remote/UserRemoteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-user-boot/edu-user-boot-impl/src/main/java/com/hatcher/user/remote/UserRemoteServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edu-oauth-boot/src/main/java/com/hatcher/oauth/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/edu-oauth-boot/src/main/java/com/hatcher/oauth/config/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,31 +82,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "D:/No03.Code/pro-edu/pro-edu-backend/edu-oauth-boot/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "库",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.6896552",
-    "settings.editor.selected.configurable": "reactor",
-    "spring.configuration.checksum": "ffc1b663605e21cbca8d72f8b58ae349",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/No03.Code/pro-edu/pro-edu-backend/edu-oauth-boot/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.6896552&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reactor&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;ffc1b663605e21cbca8d72f8b58ae349&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -258,7 +244,9 @@
       <workItem from="1674740185900" duration="737000" />
       <workItem from="1674959409949" duration="2227000" />
       <workItem from="1677138376430" duration="7546000" />
-      <workItem from="1677146948262" duration="1989000" />
+      <workItem from="1677146948262" duration="9821000" />
+      <workItem from="1677222275074" duration="177000" />
+      <workItem from="1677224316247" duration="1300000" />
     </task>
     <task id="LOCAL-00001" summary="添加java属性拷贝工具类">
       <created>1672392800054</created>
@@ -498,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674483532135</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="完成自定义数据源的登录认证">
+      <created>1677149116857</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1677149116857</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +501,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="添加忽略文件" />
     <MESSAGE value="调通广告服务模块" />
     <MESSAGE value="上传没必要文件" />
     <MESSAGE value="完成远程调用" />
@@ -531,10 +525,38 @@
     <MESSAGE value="引入hutool工具包" />
     <MESSAGE value="美化日志输出格式" />
     <MESSAGE value="完成部分user模块功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成部分user模块功能" />
+    <MESSAGE value="完成自定义数据源的登录认证" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成自定义数据源的登录认证" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../No06.Repository/org/springframework/security/spring-security-web/6.0.0/spring-security-web-6.0.0-sources.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.java</url>
+          <line>322</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../No06.Repository/org/springframework/security/spring-security-web/6.0.0/spring-security-web-6.0.0-sources.jar!/org/springframework/security/web/authentication/SimpleUrlAuthenticationSuccessHandler.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/../../../No06.Repository/org/springframework/security/spring-security-web/6.0.0/spring-security-web-6.0.0-sources.jar!/org/springframework/security/web/util/OnCommittedResponseWrapper.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.springframework.security.authentication.ProviderManager" memberName="parent" />
+        <PinnedItemInfo parentTag="org.springframework.session.web.http.SessionRepositoryFilter$SessionRepositoryRequestWrapper" memberName="request" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
